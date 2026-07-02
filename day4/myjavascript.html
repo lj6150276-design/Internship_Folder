@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <input type="text" id="number1" placeholder="enter first number"/>
+            <input type="text" id="number2" placeholder="enter second number"/>
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select>
+<button type="button"
+onclick="performarithmaticoperation()">
+calculate
+
+
+</button>
+<div id="result"></div>
+</form>
+<script>
+   function performArithmeticOperation() {
+
+    const number1 = parseFloat(document.getElementById("number1").value);
+    const number2 = parseFloat(document.getElementById("number2").value);
+    const operator = document.getElementById("operator").value;
+
+    let result = 0;
+
+    switch (operator) {
+        case "+":
+            result = number1 + number2;
+            break;
+
+        case "-":
+            result = number1 - number2;
+            break;
+
+        case "*":
+            result = number1 * number2;
+            break;
+
+        case "/":
+            result = number1 / number2;
+            break;
+    
+
+
+         }
+        
+    }
+</script>
+    </body>
+</html>

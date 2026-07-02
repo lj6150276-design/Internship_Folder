@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=""x-UA-compatible" content=""ie=edge"/>
+    <title>registration</title>
+    <link rel="stylesheet" href="formstylesheet.css">
+</head>
+<body>
+    <form>
+       <h1 style="color:white; background:#007BFF; text-align:center; padding:12px; border-radius:10px;">
+    Registration Form</h1>
+    <p><h2>Submit this formal for online registration</h2></p>
+        <label>
+            name:<br>
+        <input type="text" ID="txtname" required 
+        placeholder="Enter your name "/>
+        </label><br><br>
+        <label>
+           email:<br>
+        <input type="email" ID="txtemail" required 
+        placeholder="Enter your email "/>
+        </label><br><br>
+        <label>
+            phone no.:<br>
+        <input type="text" ID="txtphone" required 
+        placeholder="Enter your phone"/>
+        </label><br><br>
+
+
+        <label>
+             gender:<br>
+        <input type="radio" ID="chkmale" name="gender" checked/>
+        <label for="chkmale">male</label><br>
+
+        <input type="radio" ID="chkfemale" name="gender" checked/>
+        <label for="chkfemale">female</label><br>
+
+
+        <input type="radio" ID="chkother" name="gender" checked/>
+        <label for="chkother">prefer not to say</label><br>
+
+        <input type="radio" ID="chktransgender" name="gender" checked/>
+        <label for="chktransgender">transgender</label><br><br>
+
+        <label for="dtDOB">DOB:</label><br>
+        <input type="date" ID="dtDOB" name="dtDOB" checked/><br><br>
+
+        <label for="pwdPassword">Passwotrd:</label><br>
+        <input type="Password" ID="pwdPassword" name="pwdPassword" checked/><br><br>
+
+
+        <label for="pwdConfirmPassword">Confirm Passwotrd:</label><br>
+        <input type="Password" ID="pwdConfirmPassword" name="pwdConfirmPassword" checked/><br><br>
+
+        <center><input type="button" value="submit"></center> 
+         
+      </form>
+</body>

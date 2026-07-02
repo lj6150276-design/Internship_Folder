@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apple Banana Game</title>
+
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<div class="top">
+    <h2>Apple 🍎 vs Banana 🍌</h2>
+
+    <div class="score">
+        Apple : <span id="appleScore">0</span>
+        &nbsp;&nbsp;&nbsp;
+        Banana : <span id="bananaScore">0</span>
+    </div>
+
+    <select id="timeSelect">
+        <option value="300">5 Minutes</option>
+        <option value="600">10 Minutes</option>
+    </select>
+
+    <button onclick="startGame()">Start Game</button>
+
+    <h3 id="timer">05:00</h3>
+
+</div>
+
+<div id="gameArea">
+
+<img src="apple.jpg" id="apple">
+<img src="banana.png" id="banana">
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>

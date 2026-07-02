@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:900px;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+.top{
+    background:#2d3436;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.top h2{
+    margin-bottom:15px;
+}
+
+.score-board{
+    display:flex;
+    justify-content:space-around;
+    font-size:22px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.controls{
+    margin-top:10px;
+}
+
+select,button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    margin:5px;
+}
+
+button{
+    background:#27ae60;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#219150;
+    transform:scale(1.05);
+}
+
+#timer{
+    margin-top:15px;
+    font-size:32px;
+    color:#ffeaa7;
+}
+
+#gameArea{
+    position:relative;
+    height:550px;
+    background:linear-gradient(#dff9fb,#c7ecee);
+    overflow:hidden;
+}
+
+#apple,
+#banana{
+    position:absolute;
+    width:90px;
+    height:90px;
+    cursor:pointer;
+    transition:.2s;
+    user-select:none;
+}
+
+#apple:hover,
+#banana:hover{
+    transform:scale(1.15) rotate(10deg);
+}
+
+#apple:active,
+#banana:active{
+    transform:scale(.9);
+}

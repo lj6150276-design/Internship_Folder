@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#6a11cb);
+    background-size:400% 400%;
+    animation:bgAnimation 12s ease infinite;
+    color:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:rgba(0,0,0,.7)!important;
+    backdrop-filter:blur(12px);
+}
+
+.navbar-brand{
+    font-size:28px;
+}
+
+.nav-link{
+    color:#fff!important;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107!important;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:60px 0;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:800;
+    color:#FFD700;
+}
+
+.hero h4{
+    margin:20px 0;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.hero-img{
+    width:100%;
+    border-radius:20px;
+    animation:float 5s infinite;
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+/* ================= EVENTS ================= */
+
+.event-card{
+    border:none;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    color:white;
+    padding:30px 10px;
+}
+
+.event-card:hover{
+    transform:translateY(-12px) scale(1.05);
+    background:#ffc107;
+    color:#000;
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+
+/* ================= FORM ================= */
+
+.form-box{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+.form-box h2{
+    color:#FFD700;
+    font-weight:700;
+}
+
+label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-control,
+.form-select{
+
+    margin-bottom:18px;
+    border-radius:12px;
+    padding:12px;
+    border:none;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    box-shadow:0 0 12px #FFD700;
+
+}
+
+.btn-warning{
+
+    padding:14px;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:50px;
+    transition:.4s;
+
+}
+
+.btn-warning:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Member Inputs */
+
+#memberFields input{
+
+    margin-bottom:15px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:60px;
+
+}
+
+footer i{
+
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+footer i:hover{
+
+    color:#FFD700;
+    transform:translateY(-5px);
+
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+@keyframes bgAnimation{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero-img{
+
+margin-top:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.form-box{
+
+padding:25px;
+
+}
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+}
